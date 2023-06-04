@@ -1,39 +1,109 @@
 { 
-   "name": "Tgcloud", 
-   "description": "Simple telegram bot to convert files into direct download link.you can use telegram as a file server 🪁", 
-   "website": "https://github.com/Hritu-king/BotStatus", 
-   "repository": "https://github.com/Hritu-king/BotStatus", 
-   "logo": "https://i.postimg.cc/J0XSxqqM/TGCLOUD.png", 
-   "env": { 
-     "api_id": { 
-       "description": "api_id Telegram to develop a robot to receive my.telegram.org ", 
-       "required": "False", 
-       "value": "" 
+
+     "name": "File Store Bot", 
+
+     "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid", 
+
+     "keywords": [ 
+
+         "telegram", 
+
+         "files", 
+
+         "store", 
+
+         "bot" 
+
+     ], 
+
+     "repository": "https://github.com/Hritu-king/BotStatus", 
+
+     "website": "https://github.com/Hritu-king/BotStatus", 
+
+     "success_url": "https://t.me/TeleRoidGroup", 
+
+     "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg", 
+
+     "env": { 
+
+         "API_ID": { 
+
+             "description": "Get this value from my.telegram.org or @TeleORG_Bot" 
+
+         }, 
+
+         "API_HASH": { 
+
+             "description": "Get this value from my.telegram.org or @TeleORG_Bot" 
+
+         }, 
+
+         "BOT_TOKEN": { 
+
+             "description": "Get this from @BotFather XD" 
+
+         }, 
+
+         "BOT_USERNAME": { 
+
+             "description": "Your Bot Username which you sent to @BotFather (Without [@])" 
+
+         }, 
+
+         "DB_CHANNEL": { 
+
+             "description": "The Channel ID which will be used as Database. Example: -100123456789" 
+
+         }, 
+
+         "BOT_OWNER": { 
+
+             "description": "Bot Owner UserID" 
+
+         }, 
+
+         "DATABASE_URL": { 
+
+             "description": "MongoDB Database URI for Saving UserID for Broadcast." 
+
+         }, 
+
+         "UPDATES_CHANNEL": { 
+
+             "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789", 
+
+             "required": false 
+
+         }, 
+
+         "LOG_CHANNEL": { 
+
+             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789" 
+
+         } 
+
      }, 
-     "api_hash": { 
-       "description": "api_hash Telegram to develop a robot to receive my.telegram.org ", 
-       "required": "false",
-       "value": "" 
-     }, 
-     "channel_files_chat_id": { 
-       "description": " Telegram channel chat ID for storing and managing files", 
-       "required": "false", 
-       "value": "" 
-     }, 
-     "channel_username": { 
-       "description": "Telegram channel username for support", 
-       "required": "false", 
-       "value": "" 
-     }, 
-     "token": { 
-       "description": "Telegram robot token for launch .", 
-       "required": "false", 
-       "value": "" 
-     }, 
-     "domain": { 
-       "description": "Heroku application domain Example: https://testapp.herokuapp.com", 
-       "required": "false", 
-       "value": "" 
+
+     "buildpacks": [ 
+
+         { 
+
+             "url": "heroku/python" 
+
+         } 
+
+     ], 
+
+     "formation": { 
+
+         "worker": { 
+
+             "quantity": 1, 
+
+             "size": "free" 
+
+         } 
+
      } 
-   } 
+
  }
