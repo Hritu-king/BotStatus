@@ -12,7 +12,7 @@
      }, 
      "api_hash": { 
        "description": "api_hash Telegram to develop a robot to receive my.telegram.org ", 
-       "required": "false", 
+
        "value": "" 
      }, 
      "channel_files_chat_id": { 
