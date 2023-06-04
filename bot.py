@@ -24,7 +24,7 @@ logging.basicConfig(
 try:
     appid = config("APP_ID")
     apihash = config("API_HASH")
-    session = config("SESSION", default=None)
+    session = config("SESSION")
     chnl_id = config("CHANNEL_ID", cast=int)
     msg_id = config("MESSAGE_ID", cast=int)
     botlist = config("BOTS")
