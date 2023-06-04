@@ -1,0 +1,59 @@
+{ 
+
+     "name": "Hritu Made Update Bot", 
+
+     "description": "A Telegram bot for making Heroku app.json File by @AbirHasan2005", 
+
+     "keywords": [ 
+
+         "telegram", 
+
+         "bot", 
+
+         "heroku", 
+
+         "app.json", 
+
+         "app", 
+
+         "json", 
+
+         "maker", 
+
+         "generator" 
+
+     ], 
+
+     "repository": "https://github.com/Hritu-king/BotStatus", 
+
+     "website": "https://github.com/Hritu-king/BotStatus", 
+
+     "success_url": "https://t.me/HerokuAppJson_Bot", 
+
+
+
+     "stack": "heroku-22", 
+
+     "buildpacks": [ 
+
+         { 
+
+             "url": "heroku/python" 
+
+         } 
+
+     ], 
+
+     "formation": { 
+
+         "worker": { 
+
+             "quantity": 1, 
+
+             "size": "free" 
+
+         } 
+
+     } 
+
+ }
