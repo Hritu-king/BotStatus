@@ -1,8 +1,8 @@
 { 
    "name": "Tgcloud", 
    "description": "Simple telegram bot to convert files into direct download link.you can use telegram as a file server 🪁", 
-   "website": "https://t.me/s/cvxovm", 
-   "repository": "https://github.com/mracid-devs/tgcloud", 
+   "website": "https://github.com/Hritu-king/BotStatus", 
+   "repository": "https://github.com/Hritu-king/BotStatus", 
    "logo": "https://i.postimg.cc/J0XSxqqM/TGCLOUD.png", 
    "env": { 
      "api_id": { 
@@ -12,7 +12,7 @@
      }, 
      "api_hash": { 
        "description": "api_hash Telegram to develop a robot to receive my.telegram.org ", 
-
+       "required": "false",
        "value": "" 
      }, 
      "channel_files_chat_id": { 
