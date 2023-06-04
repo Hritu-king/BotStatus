@@ -7,7 +7,7 @@
    "env": { 
      "api_id": { 
        "description": "api_id Telegram to develop a robot to receive my.telegram.org ", 
-       "required": "false", 
+       "required": "False", 
        "value": "" 
      }, 
      "api_hash": { 
