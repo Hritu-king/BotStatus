@@ -22,12 +22,12 @@ logging.basicConfig(
 )
 
 try:
-    appid = config("APP_ID")
-    apihash = config("API_HASH")
-    session = config("SESSION")
-    chnl_id = config("CHANNEL_ID", cast=int)
-    msg_id = config("MESSAGE_ID", cast=int)
-    botlist = config("BOTS")
+    appid = config("APP_ID" , 29616312)
+    apihash = config("API_HASH" , "dd1a05ab4c47a5a037cc067cf4bded27")
+    session = config("SESSION" , "BQHD6LgAcHjegD4bXUxM6Vqw5tzsat8ML2Ih7bUcuzo33Fkz5R5PEIvqBYXFUc5VABluFHdgF2CAPsz3ZvE8MMNeLbVhmBVWvqIC0f9FXE3ud56Lmttk7WHdNpztIshZrkz44Cjb3oSlvxhYduA439d1iwHwbPJFohTT5NrqzGmgNvMLIy_lwGSNhesOPRDYmAGj8ALTlAgpzD-wz3TzRrFYLByAm11hXdspMDckwuCMNzlHWHYrNrOMNlu9SbTLa3Cbp2ATYhwNiLDGO2eXOhC5EnzvZi3YGDY0iFnL87RGh3hRBI-Ja05SLIFTotsbxoUfJY83w8mcsbu3ExdxC-O0UP0IlwAAAAF1QO7LAA")
+    chnl_id = config("CHANNEL_ID" , -1001785446911 , cast=int)
+    msg_id = config("MESSAGE_ID" , 10 , cast=int)
+    botlist = config("BOTS" , "videoXcompressorBot adv_file_storeBot Mention_All_RoBot")
     bots = botlist.split()
     session_name = str(session)
     user_bot = TelegramClient(StringSession(session_name), appid, apihash)
