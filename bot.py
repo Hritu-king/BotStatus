@@ -72,11 +72,11 @@ async def BotzHub():
 
                     if snt.id == msg:
                         logging.info("@%s is down.", bot)
-                        edit_text += f"@{bot} - ❌ Died\n"
+                        edit_text += f"@{bot} - ❌ Died\n\n"
                     elif snt.id + 1 == msg:
                         resp_msg = await user_bot.get_messages(bot, ids=msg)
                         time_diff = (resp_msg.date - sent_time).total_seconds() * 100
-                        edit_text += f"@{bot} - ✅ Alive [__{round(time_diff, 3)}ms__]\n"
+                        edit_text += f"@{bot} - ✅ Alive [__{round(time_diff, 3)}ms__]\n\n"
                     await user_bot.send_read_acknowledge(bot)
                     c += 1
                 except FloodWaitError as f:
