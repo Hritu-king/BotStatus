@@ -24,10 +24,3 @@ jobs:
       - name: 🏃‍♂️ Run the UserClient. 🏃‍♂️
         run: |
           python3 bot.py
-        env:
-          APP_ID: ${{ secrets.APP_ID }}
-          API_HASH: ${{ secrets.API_HASH }}
-          BOTS: ${{ secrets.BOTS }}
-          SESSION: ${{ secrets.SESSION }}
-          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-          MESSAGE_ID: ${{ secrets.MESSAGE_ID }}
